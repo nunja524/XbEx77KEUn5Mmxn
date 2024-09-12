@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body {
+    height: 100%;
+}
+div{
+	display: block;
+}
+body {
+    display: block;
+    margin: 8px;
+	margin-left: 1rem;
+	}
+body {
+    text-align: center;
+    background: #ffffff;
+    font-family: Meiryo,"メイリオ","Hiragino Kaku Gothic Pro W3","ヒラギノ角ゴ Pro W3","MS P Gothic","ＭＳ Ｐゴシック",Osaka,sans-serif;
+    color: #666666;
+}
+body{
+	text-align: center;
+	background: #FFFFFF;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	background: #FFFFFF;
+	opacity: 0.8;
+	zoom: 1;
+}
+#logo{
+	margin: 0 auto;
+	padding-top: 14px;
+	width: 200px;
+	height: 116px;
+	text-align: left;
+}
+#logo h1{
+	float: left;
+	margin-top: 10px;
+}
+#header #navi ul li a:link, #header #navi ul li a:visited {
+    padding: 20px 15px 0 15px;
+    display: block;
+    _width: 70px;
+    height: 40px;
+    color: #666666;
+    text-decoration: none;
+}
+
+ol,ul{
+	list-style: none;
+}
+
+#logo #navi ul li{
+	float: left;
+	margin-left: 20px;
+	font-size: 13px;
+	display: inline;
+}
+
+
+#footer {
+    margin-top: 0px;
+    padding: 0px 0 00px 0;
+    text-align: center;
+    font-size: 84%;
+    border-top: 1px solid #ababa9;
+}
+#footer ul li {
+    display: inline;
+    margin: 0 0px;
+}
+#footer a:link, #footer a:visited {
+    color: #666666;
+    text-decoration: none;
+}
+#copyright {
+    margin-top: 0px;
+}
