@@ -1,0 +1,45 @@
+<?php include 'header.php'; ?>
+
+<h2>会員登録フォーム</h2>
+<form action="register.php" method="POST">
+  <fieldset>
+    <legend>主な事業形態（任意）</legend>
+    <label><input type="checkbox" name="business_type[]" value="BtoB"> B to B (法人向け)</label><br>
+    <label><input type="checkbox" name="business_type[]" value="BtoC"> B to C (個人向け)</label><br>
+    <label><input type="checkbox" name="business_type[]" value="other"> その他</label>
+  </fieldset><br>
+
+  <label>会社・組織名: <input type="text" name="company"></label><br>
+  <label>所属部署: <input type="text" name="department"></label><br>
+  <label>氏名（必須）: <input type="text" name="name" required></label><br>
+  <label>メールアドレス（必須）: <input type="email" name="email" required></label><br>
+  <label>メールアドレス（確認）: <input type="email" name="email_confirm" required></label><br>
+  <label>パスワード: <input type="password" name="password"></label><br><br>
+
+  <fieldset>
+    <legend>ファスナーの主な使用目的（任意）</legend>
+    <label><input type="checkbox" name="usage[]" value="バッグ"> バッグ</label><br>
+    <label><input type="checkbox" name="usage[]" value="財布"> 財布</label><br>
+    <label><input type="checkbox" name="usage[]" value="アパレル"> アパレル</label><br>
+    <label><input type="checkbox" name="usage[]" value="産業資材"> 産業資材</label><br>
+    <label><input type="checkbox" name="usage[]" value="その他"> その他</label>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>現在のファスナー入手方法（任意）</legend>
+    <label><input type="checkbox" name="acquisition[]" value="自社手配"> 自社手配</label><br>
+    <label><input type="checkbox" name="acquisition[]" value="縫製依頼先による手配(国内)"> 縫製依頼先による手配（国内）</label><br>
+    <label><input type="checkbox" name="acquisition[]" value="縫製依頼先による手配(海外)"> 縫製依頼先による手配（海外）</label><br>
+    <label><input type="checkbox" name="acquisition[]" value="新規購入検討中"> 新規購入検討中</label><br>
+    <label><input type="checkbox" name="acquisition[]" value="その他"> その他</label>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>個人情報の取扱規程</legend>
+    <label><input type="checkbox" name="privacy_agree" value="yes" required> 当社の個人情報の取扱規程について同意します（必須）</label>
+  </fieldset><br>
+
+  <input type="submit" value="登録">
+</form>
+
+<?php include 'footer.php'; ?>
