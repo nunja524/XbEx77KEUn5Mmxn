@@ -1,0 +1,4 @@
+<FilesMatch "\\.(csv|txt|json|log)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
